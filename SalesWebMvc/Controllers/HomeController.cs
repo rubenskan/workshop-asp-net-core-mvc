@@ -27,6 +27,13 @@ namespace SalesWebMvc.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles Web MVC Core App from c#";            
+            ViewData["desenvolvedor"] = "Rubens Santos";
+            ViewData["contato"] = "(21)98610-1579";
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
