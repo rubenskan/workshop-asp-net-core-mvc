@@ -43,7 +43,7 @@ namespace SalesWebMvc.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("SaleStatus")
+                    b.Property<int>("SeleStatus")
                         .HasColumnType("int");
 
                     b.Property<int?>("SellerId")
@@ -53,7 +53,7 @@ namespace SalesWebMvc.Migrations
 
                     b.HasIndex("SellerId");
 
-                    b.ToTable("SalesRecords");
+                    b.ToTable("SalesRecord");
                 });
 
             modelBuilder.Entity("SalesWebMvc.Models.Seller", b =>
