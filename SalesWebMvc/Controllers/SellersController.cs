@@ -119,6 +119,7 @@ namespace SalesWebMvc.Controllers
             var viewModel = new ErrorViewModel
             {
                 Message = message,
+                //Obtem o id da atividade corrente
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             };
             return View(viewModel);
